@@ -56,6 +56,62 @@ header {
   z-index: 100000;
 }
 
+/* .....................Menu Navegación........................................ */
+
+.hamburguesa{
+  display: flex;
+/*   background-color: var(--color-texto); */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  border: none;
+  padding: var(--spacing-xs);
+
+}
+
+.hamburguesa span{
+  width: 25px;
+  height: 3px;
+  background-color: #2a385c;
+  border-radius: 15px;
+
+}
+
+
+.menuNavegacion{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 260px;
+  background-color: var(--color-bg);
+  flex-direction: column;
+  padding: 5rem 2rem 2rem 2rem;
+  gap: 1rem;
+  transition: right 0.3 ease;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+
+}
+.elementoListaMenu{
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  margin-bottom: 20px;
+  background-color: #2a385c;
+  width: 200px;
+  height: 50px;
+  color: #fff6e9;
+  border-radius: 15px;
+  align-items: center;
+ 
+}
+.elementoListaMenu:hover{
+    transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* .....................Menu Navegación................................................ */
 .container {
   display: flex;
   justify-content: space-between;
@@ -223,4 +279,10 @@ footer p {
   70% {
     transform: scale(1);
   }
+}
+
+
+
+.menuNavegacion.abierto{
+  right: 0;
 }

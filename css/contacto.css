@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   min-height: 100vh; /*  estamos diciendole con el "vh" que el alto sea minimo el alto de la pantalla. osea eso el el minimo de altura que tiene que tener el body */
 }
+
 header {
   position: fixed; /* esto hace que se quede fijo */
   margin-bottom: 48px;
@@ -69,6 +70,25 @@ header {
 
 .navlist a:hover {
   color: var(--color-primary);
+}
+
+.hamburguesa{
+  display: flex;
+/*   background-color: var(--color-texto); */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  border: none;
+  padding: var(--spacing-xs);
+
+}
+
+.hamburguesa span{
+  width: 25px;
+  height: 3px;
+  background-color: #2a385c;
+  border-radius: 15px;
+  
 }
 main {
   flex: 1;
